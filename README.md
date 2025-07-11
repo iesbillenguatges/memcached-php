@@ -23,3 +23,4 @@ Aplicació senzilla en PHP per gestionar una base de dades de cotxes (marca, mod
    ```bash
    unzip memcached-php-app.zip
    cd memcached-php-app
+   docker-compose up --build

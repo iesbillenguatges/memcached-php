@@ -18,11 +18,11 @@ Aplicació senzilla en PHP per gestionar una base de dades de cotxes (marca, mod
 
 ### Instruccions
 
-1. Clona aquest repositori o descomprimeix el ZIP:
-
    ```bash
    # En PWD
    akp add git
-   git clone
+   git clone https://github.com/iesbillenguatges/memcached-php.git
    cd memcached-php
    docker-compose up --build
+   ```
+I ja està, a provar-lo en localhost:8080

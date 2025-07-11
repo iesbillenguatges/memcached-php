@@ -1,10 +1,17 @@
 FROM php:8.2-apache
 
-# Instal·lar Memcached client
-RUN apt-get update &&     apt-get install -y libmemcached-dev zlib1g-dev &&     pecl install memcached &&     docker-php-ext-enable memcached
+# Instal·la les dependències per compilar extensions natives i memcached
+RUN apt-get update && apt-get install -y \
+    libmemcached-dev \
+    libz-dev \
+    libevent-dev \
+    pkg-config \
+    libssl-dev \
+    && pecl install memcached \
+    && docker-php-ext-enable memcached
 
-# Copiar fitxers de configuració i codi
-COPY php.ini /usr/local/etc/php/
+# Còpia els teus fitxers PHP al contenidor
 COPY index.php /var/www/html/
 
+# Configuració recomanada d'Apache
 EXPOSE 80

@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['baixa'], $_POST['id']
             echo "<li><b>{$d['marca']} {$d['model']}</b> ({$d['combustible']})
                     <form method='POST' style='display:inline'>
                         <input type='hidden' name='id' value='$id'>
-                        <button type='submit' name='baixa'>❌</button>
+                        <button type='submit' name='baixa'>X</button>
                     </form>
                   </li>";
         }

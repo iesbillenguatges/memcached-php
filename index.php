@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['baixa'], $_POST['id']
     </style>
 </head>
 <body>
-    <h1>🚗 Cotxes amb Memcached</h1>
+    <h1>Cotxes amb Memcached + PHP</h1>
 
     <form method="POST">
         <input type="text" name="marca" placeholder="Marca" required>

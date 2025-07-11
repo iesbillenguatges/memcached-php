@@ -25,4 +25,4 @@ Aplicació senzilla en PHP per gestionar una base de dades de cotxes (marca, mod
    cd memcached-php
    docker-compose up --build
    ```
-I ja està, a provar la app en localhost:8080
+I ja està, a provar la app en http://localhost:8080

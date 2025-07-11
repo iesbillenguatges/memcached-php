@@ -21,6 +21,8 @@ Aplicació senzilla en PHP per gestionar una base de dades de cotxes (marca, mod
 1. Clona aquest repositori o descomprimeix el ZIP:
 
    ```bash
-   unzip memcached-php-app.zip
-   cd memcached-php-app
+   # En PWD
+   akp add git
+   git clone
+   cd memcached-php
    docker-compose up --build
